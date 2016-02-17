@@ -1,0 +1,225 @@
+fp11:score_func {0, 1} [0]
+fp11:score_func | feat_pre in {11}
+clf1:max_depth [0, 2] [1.0]
+clf1:max_depth | classifier in {1}
+fp12:score_func {0, 1} [0]
+fp12:score_func | feat_pre in {12}
+fp7:sigmoid.coef0 [-1, 1] [0.0]
+fp7:sigmoid.coef0 | feat_pre in {7}
+fp7:sigmoid.coef0 | fp7:kernel in {3}
+clf13:average {0, 1} [0]
+clf13:average | classifier in {13}
+clf8:coef0 [-1, 1] [0.0]
+clf8:coef0 | classifier in {8}
+fp10:min_samples_split [2, 20] [11.0]
+fp10:min_samples_split | feat_pre in {10}
+LOG_clf8:C [-3.4657359028, 10.3972077084] [3.4657359028]
+LOG_clf8:C | classifier in {8}
+fp9:include_bias {0, 1} [0]
+fp9:include_bias | feat_pre in {9}
+LOG_clf13:alpha [-13.815510558, -2.30258509299] [-8.05904782548]
+LOG_clf13:alpha | classifier in {13}
+clf12:min_samples_leaf [1, 20] [10.5]
+clf12:min_samples_leaf | classifier in {12}
+clf0:algorithm {0, 1} [0]
+clf0:algorithm | classifier in {0}
+clf13:penalty {0, 1, 2} [0]
+clf13:penalty | classifier in {13}
+clf8:shrinking {0, 1} [0]
+clf8:shrinking | classifier in {8}
+clf13:eta0 [1e-06, 0.1] [0.0500005]
+clf13:eta0 | classifier in {13}
+clf8:poly.degree [1, 5] [3.0]
+clf8:poly.degree | classifier in {8}
+clf8:poly.degree | clf8:kernel in {2}
+fp1:n_components [10, 2000] [1005.0]
+fp1:n_components | feat_pre in {1}
+balancing {0, 1} [0]
+LOG_clf4:learning_rate [-9.21034037198, 0.0] [-4.60517018599]
+LOG_clf4:learning_rate | classifier in {4}
+fp7:kernel {0, 1, 2, 3, 4} [0]
+fp7:kernel | feat_pre in {7}
+clf10:loss {0, 1} [0]
+clf10:loss | classifier in {10}
+LOG_fp7:chi2.gamma [-10.3972077084, 2.07944154168] [-4.15888308336]
+LOG_fp7:chi2.gamma | feat_pre in {7}
+LOG_fp7:chi2.gamma | fp7:kernel in {2}
+fp12:param [0.01, 0.5] [0.255]
+fp12:param | feat_pre in {12}
+fp0:criterion {0, 1} [0]
+fp0:criterion | feat_pre in {0}
+feat_pre {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12} [0]
+fp11:percentile [1, 99] [50.0]
+fp11:percentile | feat_pre in {11}
+LOG_fp3:rbf.gamma [-10.3972077084, 2.07944154168] [-4.15888308336]
+LOG_fp3:rbf.gamma | fp3:kernel in {1}
+LOG_fp3:rbf.gamma | feat_pre in {3}
+LOG_clf9:alpha [-4.60517018599, 4.60517018599] [4.4408920985e-16]
+LOG_clf9:alpha | classifier in {9}
+LOG_clf0:learning_rate [-9.21034037198, 0.69314718056] [-4.25859659571]
+LOG_clf0:learning_rate | classifier in {0}
+classifier {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13} [0]
+clf9:fit_prior {0, 1} [0]
+clf9:fit_prior | classifier in {9}
+fp12:mode {0, 1, 2} [0]
+fp12:mode | feat_pre in {12}
+fp3:kernel {0, 1, 2, 3} [0]
+fp3:kernel | feat_pre in {3}
+fp10:n_estimators [10, 100] [55.0]
+fp10:n_estimators | feat_pre in {10}
+clf4:subsample [0.01, 1] [0.505]
+clf4:subsample | classifier in {4}
+LOG_fp7:poly.gamma [-10.3972077084, 2.07944154168] [-4.15888308336]
+LOG_fp7:poly.gamma | feat_pre in {7}
+LOG_fp7:poly.gamma | fp7:kernel in {4}
+clf4:min_samples_leaf [1, 20] [10.5]
+clf4:min_samples_leaf | classifier in {4}
+clf4:min_samples_split [2, 20] [11.0]
+clf4:min_samples_split | classifier in {4}
+clf2:min_samples_split [2, 20] [11.0]
+clf2:min_samples_split | classifier in {2}
+clf1:min_samples_leaf [1, 20] [10.5]
+clf1:min_samples_leaf | classifier in {1}
+fp2:n_clusters [2, 400] [201.0]
+fp2:n_clusters | feat_pre in {2}
+LOG_clf13:modified_huber.epsilon [-11.512925465, -2.30258509299] [-6.90775527898]
+LOG_clf13:modified_huber.epsilon | clf13:loss in {4}
+LOG_clf13:modified_huber.epsilon | classifier in {13}
+LOG_clf6:tol [-11.512925465, -2.30258509299] [-6.90775527898]
+LOG_clf6:tol | classifier in {6}
+fp9:interaction_only {0, 1} [0]
+fp9:interaction_only | feat_pre in {9}
+fp2:linkage+affinity {0, 1, 2, 3, 4, 5, 6} [0]
+fp2:linkage+affinity | feat_pre in {2}
+clf5:weights {0, 1} [0]
+clf5:weights | classifier in {5}
+clf12:max_features [1, 5] [3.0]
+clf12:max_features | classifier in {12}
+clf13:elasticnet.l1_ratio [0, 1] [0.5]
+clf13:elasticnet.l1_ratio | classifier in {13}
+clf13:elasticnet.l1_ratio | clf13:penalty in {2}
+LOG_clf10:C [-11.512925465, 2.30258509299] [-4.60517018599]
+LOG_clf10:C | classifier in {10}
+LOG_fp3:poly.gamma [-10.3972077084, 2.07944154168] [-4.15888308336]
+LOG_fp3:poly.gamma | fp3:kernel in {3}
+LOG_fp3:poly.gamma | feat_pre in {3}
+fp1:fun {0, 1, 2} [0]
+fp1:fun | feat_pre in {1}
+clf1:min_samples_split [2, 20] [11.0]
+clf1:min_samples_split | classifier in {1}
+clf13:invscaling.power_t [1e-05, 1] [0.500005]
+clf13:invscaling.power_t | classifier in {13}
+clf13:invscaling.power_t | clf13:learning_rate in {2}
+LOG_fp5:C [-3.4657359028, 10.3972077084] [3.4657359028]
+LOG_fp5:C | feat_pre in {5}
+clf0:max_depth [1, 10] [5.5]
+clf0:max_depth | classifier in {0}
+clf0:n_estimators [50, 500] [275.0]
+clf0:n_estimators | classifier in {0}
+clf2:criterion {0, 1} [0]
+clf2:criterion | classifier in {2}
+LOG_clf7:tol [-11.512925465, -2.30258509299] [-6.90775527898]
+LOG_clf7:tol | classifier in {7}
+fp9:degree [2, 3] [2.5]
+fp9:degree | feat_pre in {9}
+LOG_clf7:C [-3.4657359028, 10.3972077084] [3.4657359028]
+LOG_clf7:C | classifier in {7}
+LOG_clf8:tol [-11.512925465, -2.30258509299] [-6.90775527898]
+LOG_clf8:tol | classifier in {8}
+fp3:poly.coef0 [-1, 1] [0.0]
+fp3:poly.coef0 | fp3:kernel in {3}
+fp3:poly.coef0 | feat_pre in {3}
+fp0:max_features [1, 5] [3.0]
+fp0:max_features | feat_pre in {0}
+clf13:n_iter [5, 1000] [502.5]
+clf13:n_iter | classifier in {13}
+fp10:max_depth [2, 10] [6.0]
+fp10:max_depth | feat_pre in {10}
+LOG_fp5:tol [-11.512925465, -2.30258509299] [-6.90775527898]
+LOG_fp5:tol | feat_pre in {5}
+clf12:min_samples_split [2, 20] [11.0]
+clf12:min_samples_split | classifier in {12}
+fp3:sigmoid.coef0 [-1, 1] [0.0]
+fp3:sigmoid.coef0 | fp3:kernel in {2}
+fp3:sigmoid.coef0 | feat_pre in {3}
+clf5:p {0, 1} [0]
+clf5:p | classifier in {5}
+LOG_fp7:n_components [3.91202300543, 9.21034037198] [6.5611816887]
+LOG_fp7:n_components | feat_pre in {7}
+fp7:poly.coef0 [-1, 1] [0.0]
+fp7:poly.coef0 | feat_pre in {7}
+fp7:poly.coef0 | fp7:kernel in {4}
+clf1:criterion {0, 1} [0]
+clf1:criterion | classifier in {1}
+clf6:shrinkage.factor [0, 1] [0.5]
+clf6:shrinkage.factor | clf6:shrinkage in {2}
+clf6:shrinkage.factor | classifier in {6}
+LOG_clf8:gamma [-10.3972077084, 2.07944154168] [-4.15888308336]
+LOG_clf8:gamma | classifier in {8}
+fp0:min_samples_leaf [1, 20] [10.5]
+fp0:min_samples_leaf | feat_pre in {0}
+clf12:criterion {0, 1} [0]
+clf12:criterion | classifier in {12}
+clf2:bootstrap {0, 1} [0]
+clf2:bootstrap | classifier in {2}
+fp0:min_samples_split [2, 20] [11.0]
+fp0:min_samples_split | feat_pre in {0}
+clf10:n_iter [5, 1000] [502.5]
+clf10:n_iter | classifier in {10}
+fp4:gamma [0.3, 2] [1.15]
+fp4:gamma | feat_pre in {4}
+clf2:min_samples_leaf [1, 20] [10.5]
+clf2:min_samples_leaf | classifier in {2}
+fp1:whiten {0, 1} [0]
+fp1:whiten | feat_pre in {1}
+LOG_fp4:n_components [3.91202300543, 9.21034037198] [6.5611816887]
+LOG_fp4:n_components | feat_pre in {4}
+clf6:shrinkage {0, 1, 2} [0]
+clf6:shrinkage | classifier in {6}
+clf6:n_components [1, 250] [125.5]
+clf6:n_components | classifier in {6}
+clf12:bootstrap {0, 1} [0]
+clf12:bootstrap | classifier in {12}
+clf8:kernel {0, 1, 2} [0]
+clf8:kernel | classifier in {8}
+fp3:poly.degree [2, 5] [3.5]
+fp3:poly.degree | fp3:kernel in {3}
+fp3:poly.degree | feat_pre in {3}
+rescaling {0, 1, 2, 3} [0]
+fp8:n_components [0.5, 0.9999] [0.74995]
+fp8:n_components | feat_pre in {8}
+fp3:n_components [10, 2000] [1005.0]
+fp3:n_components | feat_pre in {3}
+clf4:max_features [1, 5] [3.0]
+clf4:max_features | classifier in {4}
+clf11:reg_param [0, 10] [5.0]
+clf11:reg_param | classifier in {11}
+clf4:max_depth [1, 10] [5.5]
+clf4:max_depth | classifier in {4}
+fp2:pooling_func {0, 1, 2} [0]
+fp2:pooling_func | feat_pre in {2}
+fp7:poly.degree [2, 5] [3.5]
+fp7:poly.degree | feat_pre in {7}
+fp7:poly.degree | fp7:kernel in {4}
+fp8:whiten {0, 1} [0]
+fp8:whiten | feat_pre in {8}
+fp10:min_samples_leaf [1, 20] [10.5]
+fp10:min_samples_leaf | feat_pre in {10}
+LOG_fp7:sigmoid.gamma [-10.3972077084, 2.07944154168] [-4.15888308336]
+LOG_fp7:sigmoid.gamma | feat_pre in {7}
+LOG_fp7:sigmoid.gamma | fp7:kernel in {3}
+clf13:loss {0, 1, 2, 3, 4} [0]
+clf13:loss | classifier in {13}
+fp0:bootstrap {0, 1} [0]
+fp0:bootstrap | feat_pre in {0}
+clf5:n_neighbors [1, 100] [50.5]
+clf5:n_neighbors | classifier in {5}
+clf13:learning_rate {0, 1, 2} [0]
+clf13:learning_rate | classifier in {13}
+clf2:max_features [1, 5] [3.0]
+clf2:max_features | classifier in {2}
+fp1:algorithm {0, 1} [0]
+fp1:algorithm | feat_pre in {1}
+LOG_fp7:rbf.gamma [-10.3972077084, 2.07944154168] [-4.15888308336]
+LOG_fp7:rbf.gamma | feat_pre in {7}
+LOG_fp7:rbf.gamma | fp7:kernel in {1}
