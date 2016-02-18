@@ -8,12 +8,12 @@ FLASH is a package to perform Bayesian optimization on tuning data analytic pipe
 
 FLASH is developed on top of [HPOlib](http://www.automl.org/hpolib.html), a general platform for hyperparameter optimization. Since HPOlib was developed on Ubuntu and currently only supports Linux distributions, FLASH also only works on Linux (we developed and tested our package on Ubuntu).
 
-** 1) Clone the package **
+**1) Clone the package**
 ```bash
 git clone https://github.com/yuyuz/FLASH.git
 ```
 
-2) Install Miniconda
+**2) Install Miniconda**
 
 To avoid a variety of potential problems in environment settings, we highly recommend to install Miniconda.
 
@@ -31,14 +31,14 @@ bash Miniconda-latest-Linux-x86.sh
 
 Answer ``yes`` when the installer asks to prepend the Miniconda2 install location to PATH in your ``.bashrc``. Restart the terminal or execute ``source ~/.bashrc`` to make sure that conda has taken charge of your Python environment.
 
-3) Install dependencies
+**3) Install dependencies**
 ```bash
 easy_install -U distribute
 conda install -y numpy scipy matplotlib scikit-learn==0.16.1
 pip install hyperopt liac-arff
 ```
 
-4) Install package
+**4) Install package**
 ```bash
 cd /path/to/FLASH
 python setup.py install
