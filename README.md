@@ -13,11 +13,12 @@ FLASH is developed on top of [HPOlib](http://www.automl.org/hpolib.html), a gene
 git clone https://github.com/yuyuz/FLASH.git
 ```
 
-2) Install conda
+2) Install Miniconda
 ```bash
 wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
 bash Miniconda-latest-Linux-x86_64.sh
 ```
+Answer ``yes`` when the installer asks to prepend the Miniconda2 install location to PATH in your ``.bashrc``. Restart the terminal or execute ``source ~/.bashrc`` to make sure that Miniconda has taken charge of your python environment.
 
 3) Install dependencies
 ```bash
