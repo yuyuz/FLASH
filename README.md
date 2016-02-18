@@ -17,13 +17,13 @@ git clone https://github.com/yuyuz/FLASH.git
 
 To avoid a variety of potential problems in environment settings, we highly recommend to install Miniconda.
 
-If you are using 64-bit Linux system (recommended), use the 64-bit bash installer:
+If you are using 64-bit Linux system (recommended):
 ```bash
 wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
 bash Miniconda-latest-Linux-x86_64.sh
 ```
 
-If you are using 32-bit Linux system, use the 32-bit bash installer:
+If you are using 32-bit Linux system:
 ```bash
 wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86.sh
 bash Miniconda-latest-Linux-x86.sh
