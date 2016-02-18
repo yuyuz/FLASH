@@ -8,7 +8,7 @@ FLASH is a package to perform Bayesian optimization on tuning data analytic pipe
 
 FLASH is developed on top of [HPOlib](http://www.automl.org/hpolib.html), a general platform for hyperparameter optimization. Since HPOlib was developed on Ubuntu and currently only supports Linux distributions, FLASH also only works on Linux (we developed and tested our package on Ubuntu).
 
-**1. Clone the package**
+**1. Clone repository**
 ```bash
 git clone https://github.com/yuyuz/FLASH.git
 ```
