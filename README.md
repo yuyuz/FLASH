@@ -29,7 +29,9 @@ wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86.sh
 bash Miniconda-latest-Linux-x86.sh
 ```
 
-Answer ``yes`` when the installer asks to prepend the Miniconda2 install location to PATH in your ``.bashrc``. Restart the terminal or execute ``source ~/.bashrc`` to make sure that conda has taken charge of your Python environment.
+Answer ``yes`` when the installer asks to prepend the Miniconda2 install location to PATH in your ``.bashrc``. 
+
+After installation completed, restart terminal or execute ``source ~/.bashrc`` to make sure that conda has taken charge of your Python environment.
 
 **3. Install dependencies**
 ```bash
