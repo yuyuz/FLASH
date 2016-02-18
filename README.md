@@ -14,11 +14,22 @@ git clone https://github.com/yuyuz/FLASH.git
 ```
 
 2) Install Miniconda
+
+To avoid a variety of potential problems in environment settings, we highly recommend to install Miniconda.
+
+If you are using 64-bit Linux system (recommended), use the 64-bit bash installer:
 ```bash
 wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
 bash Miniconda-latest-Linux-x86_64.sh
 ```
-Answer ``yes`` when the installer asks to prepend the Miniconda2 install location to PATH in your ``.bashrc``. Restart the terminal or execute ``source ~/.bashrc`` to make sure that Miniconda has taken charge of your python environment.
+
+If you are using 32-bit Linux system, use the 32-bit bash installer:
+```bash
+wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86.sh
+bash Miniconda-latest-Linux-x86.sh
+```
+
+Answer ``yes`` when the installer asks to prepend the Miniconda2 install location to PATH in your ``.bashrc``. Restart the terminal or execute ``source ~/.bashrc`` to make sure that conda has taken charge of your Python environment.
 
 3) Install dependencies
 ```bash
