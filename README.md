@@ -34,7 +34,7 @@ Answer ``yes`` when the installer asks to prepend the Miniconda2 install locatio
 **3. Install dependencies**
 ```bash
 easy_install -U distribute
-conda install -y numpy scipy matplotlib scikit-learn==0.16.1
+conda install -y openblas numpy scipy matplotlib scikit-learn==0.16.1
 pip install hyperopt liac-arff
 ```
 
