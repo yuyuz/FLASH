@@ -51,4 +51,4 @@ nosetests.xml
 *~
 
 # Data
-HPOlib/benchmarks/sklearn/data/*
+data/*
