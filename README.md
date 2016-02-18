@@ -15,7 +15,7 @@ git clone https://github.com/yuyuz/FLASH.git
 
 **2. Install Miniconda**
 
-To avoid a variety of potential problems in environment settings, we highly recommend to install Miniconda.
+To avoid a variety of potential problems in environment settings, we highly recommend to use Miniconda.
 
 If you are using 64-bit Linux system (recommended):
 ```bash
