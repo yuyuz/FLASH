@@ -2,13 +2,13 @@
 
 ## What is FLASH?
 
-FLASH is a package to perform Bayesian optimization on tuning data analytic pipelines. Specifically, it is a two-layer Bayesian optimization framework, which first uses a parametric model to select promising algorithms, then computes a nonparametric model to fine-tune hyperparameters of the promising algorithms. 
-
-FLASH is developed on top of [HPOlib](https://github.com/automl/HPOlib), a general platform for hyperparameter optimization. FLASH is licensed under the GPL license.
+FLASH is a package to perform Bayesian optimization on tuning data analytic pipelines. Specifically, it is a two-layer Bayesian optimization framework, which first uses a parametric model to select promising algorithms, then computes a nonparametric model to fine-tune hyperparameters of the promising algorithms. FLASH is licensed under the GPL license.
 
 ## Installation
 
-1) Download the package from Github
+FLASH is developed on top of [HPOlib](http://www.automl.org/hpolib.html), a general platform for hyperparameter optimization. Since HPOlib was developed on Ubuntu and currently only supports Linux distributions, FLASH also only works on Linux (we developed and tested our package on Ubuntu).
+
+1) Clone the package
 ```bash
 git clone https://github.com/yuyuz/FLASH.git
 ```
