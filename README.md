@@ -6,6 +6,27 @@ FLASH is a package to perform Bayesian optimization on tuning data analytic pipe
 
 ## Installation
 
+``git clone https://github.com/yuyuz/FLASH.git``
+
+### Install conda
+```
+wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
+bash Miniconda-latest-Linux-x86_64.sh
+```
+
+### Install dependencies
+```
+easy_install -U distribute
+conda install -y numpy scipy matplotlib scikit-learn==0.16.1
+pip install hyperopt liac-arff
+```
+
+### Install package
+```
+cd /path/to/FLASH
+python setup.py install
+```
+
 ## Benchmark Datasets
 
 http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets/
