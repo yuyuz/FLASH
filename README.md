@@ -52,8 +52,9 @@ python setup.py install
 
 ## Benchmark Datasets
 
-All the benchmark datasets are available [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets/). These datasets was first introduced by [Auto-WEKA](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/) and have been widely used to evaluate Bayesian optimization methods.
+All the benchmark datasets are publicly available [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets/). These datasets were first introduced by [Auto-WEKA](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/) and have been widely used to evaluate Bayesian optimization methods.
 
+Due to the file size policy, we are not able to provide all those datasets in our Github repository. To deploy a benchmark dataset, just download the zip file from [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets/) and uncompress it. You will get a folder with the dataset name which contains training data ``train.arff`` and testing data ``test.arff``. Put the dataset folder in our ``data`` folder.
 
 ## How to Run?
 
