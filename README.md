@@ -34,6 +34,8 @@ Answer ``yes`` when the installer asks to prepend the Miniconda2 install locatio
 After installation completed, restart terminal or execute ``source ~/.bashrc`` to make sure that conda has taken charge of your Python environment.
 
 **3. Install dependencies**
+
+Now we install dependencies within conda environment.
 ```bash
 easy_install -U distribute
 conda install -y openblas numpy scipy matplotlib scikit-learn==0.16.1
@@ -41,6 +43,8 @@ pip install hyperopt liac-arff
 ```
 
 **4. Install package**
+
+Install HPOlib and some requirements (``pymongo``, ``protobuf``, ``networkx``). During the installation, keep your system connected to the Internet such that ``setup.py`` can downlad code packages of optimizers.
 ```bash
 cd /path/to/FLASH
 python setup.py install
