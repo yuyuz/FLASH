@@ -52,9 +52,8 @@ python setup.py install
 
 ## Benchmark Datasets
 
-http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets/
+All the benchmark datasets are available [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets/). These datasets was first introduced by [Auto-WEKA](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/) and have been widely used to evaluate Bayesian optimization methods.
 
-## Benchmark Pipeline
 
 ## How to Run?
 
