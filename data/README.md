@@ -1,2 +1,1 @@
-Datasets are available at http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets. We desribe how to deploy the data [here](https://github.com/yuyuz/FLASH/blob/master/README.md).
- 
+Due to the limit of file size, we only provide one sample dataset ``madelon`` here. To deploy other benchmark datasets, please check the corresponding section in [document](https://github.com/yuyuz/FLASH/blob/master/README.md#benchmark-datasets).
