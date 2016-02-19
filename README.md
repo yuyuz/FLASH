@@ -44,7 +44,7 @@ pip install hyperopt liac-arff
 
 **4. Install package**
 
-Install HPOlib and some requirements (``pymongo``, ``protobuf``, ``networkx``). During the installation, keep your system connected to the Internet such that ``setup.py`` can downlad code packages of optimizers.
+Install HPOlib and some requirements (``pymongo``, ``protobuf``, ``networkx``). During the installation, please keep your system **connected to the Internet**, such that ``setup.py`` can download optimizer code packages.
 ```bash
 cd /path/to/FLASH
 python setup.py install
