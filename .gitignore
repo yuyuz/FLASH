@@ -7,7 +7,7 @@
 runsolver/src/*
 
 # benchmark runs
-HPOlib/benchmarks/*/*_*/*
+benchmarks/*/*_*/*
 
 # C extensions
 *.so
