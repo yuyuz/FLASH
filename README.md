@@ -58,4 +58,4 @@ Due to the file size limit, we are not able to provide all those datasets in our
 
 ## How to Run?
 
-
+For benchmark datasets, we build a general data anlalytic pipeline based on scikit-learn. Details about this pipeline are described in the paper.
