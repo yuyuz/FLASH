@@ -42,7 +42,7 @@ After installation completed, restart terminal or execute ``source ~/.bashrc`` t
 
 **3. Install dependencies**
 
-Now we install dependencies within conda environment.
+Now we install dependencies within conda environment:
 ```bash
 easy_install -U distribute
 conda install -y openblas numpy scipy matplotlib scikit-learn==0.16.1
@@ -73,4 +73,36 @@ To run this pipeline on a specific dataset, first you need to correctly set the 
 * In the ``HPOLIB`` section, change the ``data_path`` according to your local setting.
 * In the ``HPOLIB`` section, change the ``dataset`` name to whichever dataset you have deployed as the input of pipeline.
 
-Now you can run the pipeline using different Bayesian optimization algorithms.
+Now you can tune the pipeline using different Bayesian optimization methods. For each method, we provide a Python script to run the tuning process.
+
+For our method, it currently has two versions (with different optimizers for the last phase): **FLASH** and **FLASH<sup>*</sup>**.  
+To run FLASH:
+```bash
+cd /path/to/FLASH/benchmarks/sklearn
+python run_flash.py
+```
+
+To run FLASH<sup>*</sup>:
+```bash
+cd /path/to/FLASH/benchmarks/sklearn
+python run_flash_star.py
+```
+
+For other methods ([SMAC](http://www.cs.ubc.ca/labs/beta/Projects/SMAC), [TPE](http://jaberg.github.io/hyperopt), Random Search), we use the implementations in [HPOlib](http://www.automl.org/hpolib.html) and also provide Python scripts.  
+To run SMAC:
+```
+cd /path/to/FLASH/benchmarks/sklearn
+python run_smac.py
+```
+
+To run TPE:
+```
+cd /path/to/FLASH/benchmarks/sklearn
+python run_tpe.py
+```
+
+To run Random Search:
+```
+cd /path/to/FLASH/benchmarks/sklearn
+python run_random.py
+```
