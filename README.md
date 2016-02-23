@@ -2,7 +2,9 @@
 
 ## What is FLASH?
 
-FLASH is a package to perform Bayesian optimization on tuning data analytic pipelines. Specifically, it is a two-layer Bayesian optimization framework, which first uses a parametric model to select promising algorithms, then computes a nonparametric model to fine-tune hyperparameters of the promising algorithms. Details of FLASH are described in the paper:
+FLASH is a package to perform Bayesian optimization on tuning data analytic pipelines. Specifically, it is a two-layer Bayesian optimization framework, which first uses a parametric model to select promising algorithms, then computes a nonparametric model to fine-tune hyperparameters of the promising algorithms.
+
+Details of FLASH are described in the paper:
 
 **FLASH: Fast Bayesian Optimization for Data Analytic Pipelines** [[arXiv](http://arxiv.org/abs/1602.06468)]  
 Yuyu Zhang, Mohammad Taha Bahadori, Hang Su, Jimeng Sun
@@ -63,4 +65,4 @@ Due to the file size limit, we are not able to provide all those datasets in our
 
 ## How to Run?
 
-For benchmark datasets, we build a general data anlalytic pipeline based on scikit-learn. Details about this pipeline are described in the paper.
+For benchmark datasets, we build a general data anlalytic pipeline based on [scikit-learn](http://scikit-learn.org/). Details about this pipeline are described in the [paper](http://arxiv.org/abs/1602.06468).
