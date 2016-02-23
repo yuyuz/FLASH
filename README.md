@@ -65,7 +65,7 @@ Due to the file size limit, we are not able to provide all those datasets in our
 
 ## How to Run?
 
-For benchmark datasets, we build a general data anlalytic pipeline based on [scikit-learn](http://scikit-learn.org), following the pipeline design of [auto-sklearn](https://github.com/automl/auto-sklearn). We have 4 computational steps with 33 algorithms in this pipeline. Details are discussed in the [paper](http://arxiv.org/abs/1602.06468).
+For benchmark datasets, we build a general data analytic pipeline based on [scikit-learn](http://scikit-learn.org), following the pipeline design of [auto-sklearn](https://github.com/automl/auto-sklearn). We have 4 computational steps with 33 algorithms in this pipeline. Details are discussed in the [paper](http://arxiv.org/abs/1602.06468).
 
 To run this pipeline on a specific dataset, first you need to correctly set the configuration file (``/path/to/FLASH/benchmarks/sklearn/config.cfg``):
 
@@ -75,7 +75,7 @@ To run this pipeline on a specific dataset, first you need to correctly set the 
 
 Now you can tune the pipeline using different Bayesian optimization methods. For each method, we provide a Python script to run the tuning process.
 
-For our method, it currently has two versions (with different optimizers for the last phase): **FLASH** and **FLASH<sup>*</sup>**.  
+For our method, it currently has two versions (with different optimizers in the last phase): **FLASH** and **FLASH<sup>*</sup>**.  
 To run **FLASH**:
 ```bash
 cd /path/to/FLASH/benchmarks/sklearn
@@ -106,3 +106,23 @@ To run **Random Search**:
 cd /path/to/FLASH/benchmarks/sklearn
 python run_random.py
 ```
+
+## Advanced Configurations
+
+In the configuration file (``/path/to/FLASH/benchmarks/sklearn/config.cfg``), you can set quite a few advanced configurations.
+
+The configuration items in the ``HPOLIB`` section are effective for all the optimization methods above:
+
+* Set ``use_caching`` as ``1`` to enable pipeline caching and ``0`` to disable caching.
+* ``cv_folds`` specifies the number of cross validation folds during the optimization.
+* For other items such as ``number_of_jobs`` and ``result_on_terminate``, refer to the HPOlib [manual](http://www.automl.org/manual.html).
+
+The configuration items in the ``LR`` section are only effective for FLASH and FLASH<sup>*</sup>:
+
+* Set ``use_optimal_design`` as ``1`` to enable optimal design for initialization and ``0`` to use random initialization.
+* ``init_budget`` specifies the number of iterations for Phase 1 (initialization).
+* ``ei_budget`` specifies the number of iterations for Phase 2 (pruning).
+* ``bopt_budget`` specifies the number of iterations for Phase 3 (fine-tuning).
+* ``ei_xi`` is the trade-off parameter ξ in EI and EIPS functions, which balances the exploitation and
+exploration.
+* ``top_k_pipelines`` specifies the number of best pipeline paths to select at the end of Phase 2 (pruning).
