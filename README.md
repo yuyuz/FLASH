@@ -61,7 +61,7 @@ python setup.py install
 
 All the benchmark datasets are publicly available [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets). These datasets were first introduced by [Auto-WEKA](http://www.cs.ubc.ca/labs/beta/Projects/autoweka) and have been widely used to evaluate Bayesian optimization methods.
 
-Due to the file size limit, we are not able to provide all those datasets in our Github repository. In fact, only the ``madelon`` dataset is provided as an example. To deploy a new benchmark dataset, just download the zip file from [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets) and uncompress it. You will get a dataset folder including two files ``train.arff`` and ``test.arff``. Move this folder into the [data directory](https://github.com/yuyuz/FLASH/tree/master/data), just like the dataset folder ``madelon`` we already put there.
+Due to the file size limit, we are not able to provide all those datasets in our Github repository. In fact, only the ``madelon`` dataset is provided as an example. To deploy a new benchmark dataset, download the zip file from [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets) and then uncompress it. You will get a dataset folder including two files ``train.arff`` and ``test.arff``. Move this folder into the [data directory](https://github.com/yuyuz/FLASH/tree/master/data), just like the dataset folder ``madelon`` we already put there.
 
 ## How to Run?
 
