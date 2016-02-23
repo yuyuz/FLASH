@@ -22,7 +22,7 @@ git clone https://github.com/yuyuz/FLASH.git
 
 **2. Install Miniconda**
 
-To avoid a variety of potential problems in environment settings, we highly recommend to use Miniconda.
+To avoid a variety of potential problems in environment settings, we highly recommend to use Miniconda (Python 2.7).
 
 If you are using 64-bit Linux system (recommended):
 ```bash
@@ -59,10 +59,15 @@ python setup.py install
 
 ## Benchmark Datasets
 
-All the benchmark datasets are publicly available [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets/). These datasets were first introduced by [Auto-WEKA](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/) and have been widely used to evaluate Bayesian optimization methods.
+All the benchmark datasets are publicly available [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets). These datasets were first introduced by [Auto-WEKA](http://www.cs.ubc.ca/labs/beta/Projects/autoweka) and have been widely used to evaluate Bayesian optimization methods.
 
-Due to the file size limit, we are not able to provide all those datasets in our Github repository. To deploy a benchmark dataset, just download the zip file from [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets/) and uncompress it. You will get a dataset folder including two files ``train.arff`` and ``test.arff``. Move this folder into our ``data`` directory. Now you can run the pipeline on this dataset.
+Due to the file size limit, we are not able to provide all those datasets in our Github repository. In fact, only the ``madelon`` dataset is provided as an example. To deploy a new benchmark dataset, just download the zip file from [here](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/datasets) and uncompress it. You will get a dataset folder including two files ``train.arff`` and ``test.arff``. Move this folder into the [data directory](https://github.com/yuyuz/FLASH/tree/master/data), just like the dataset folder ``madelon`` we already put there.
 
 ## How to Run?
 
-For benchmark datasets, we build a general data anlalytic pipeline based on [scikit-learn](http://scikit-learn.org/). Details about this pipeline are described in the [paper](http://arxiv.org/abs/1602.06468).
+For benchmark datasets, we build a general data anlalytic pipeline based on [scikit-learn](http://scikit-learn.org), following the pipeline design of [auto-sklearn](https://github.com/automl/auto-sklearn). We have 4 computational steps with 33 algorithms in this pipeline. Details are discussed in the [paper](http://arxiv.org/abs/1602.06468).
+
+To run this pipeline on a specific dataset, first you need to correctly set the configuration file (``/path/to/FLASH/benchmarks/sklearn/config.cfg``):
+
+* In ``HPOLIB`` section, change the ``function`` path to ``ml_framework.py`` and the ``data_path`` according to your local setting.
+* In ``HPOLIB`` section, change the ``dataset`` name to whichever dataset you have deployed as the input of pipeline.
