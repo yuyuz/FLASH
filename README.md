@@ -76,33 +76,33 @@ To run this pipeline on a specific dataset, first you need to correctly set the 
 Now you can tune the pipeline using different Bayesian optimization methods. For each method, we provide a Python script to run the tuning process.
 
 For our method, it currently has two versions (with different optimizers for the last phase): **FLASH** and **FLASH<sup>*</sup>**.  
-To run FLASH:
+To run **FLASH**:
 ```bash
 cd /path/to/FLASH/benchmarks/sklearn
 python run_flash.py
 ```
 
-To run FLASH<sup>*</sup>:
+To run **FLASH<sup>*</sup>**:
 ```bash
 cd /path/to/FLASH/benchmarks/sklearn
 python run_flash_star.py
 ```
 
 For other methods ([SMAC](http://www.cs.ubc.ca/labs/beta/Projects/SMAC), [TPE](http://jaberg.github.io/hyperopt), Random Search), we use the implementations in [HPOlib](http://www.automl.org/hpolib.html) and also provide Python scripts.  
-To run SMAC:
-```
+To run **SMAC**:
+```bash
 cd /path/to/FLASH/benchmarks/sklearn
 python run_smac.py
 ```
 
-To run TPE:
-```
+To run **TPE**:
+```bash
 cd /path/to/FLASH/benchmarks/sklearn
 python run_tpe.py
 ```
 
-To run Random Search:
-```
+To run **Random Search**:
+```bash
 cd /path/to/FLASH/benchmarks/sklearn
 python run_random.py
 ```
