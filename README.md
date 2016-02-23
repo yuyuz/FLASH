@@ -2,7 +2,12 @@
 
 ## What is FLASH?
 
-FLASH is a package to perform Bayesian optimization on tuning data analytic pipelines. Specifically, it is a two-layer Bayesian optimization framework, which first uses a parametric model to select promising algorithms, then computes a nonparametric model to fine-tune hyperparameters of the promising algorithms. FLASH is licensed under the GPL license.
+FLASH is a package to perform Bayesian optimization on tuning data analytic pipelines. Specifically, it is a two-layer Bayesian optimization framework, which first uses a parametric model to select promising algorithms, then computes a nonparametric model to fine-tune hyperparameters of the promising algorithms. Details of FLASH are described in the paper:
+
+**FLASH: Fast Bayesian Optimization for Data Analytic Pipelines** [[arXiv](http://arxiv.org/abs/1602.06468)]  
+Yuyu Zhang, Mohammad Taha Bahadori, Hang Su, Jimeng Sun
+
+FLASH is licensed under the GPL license, which can be found in the package.
 
 ## Installation
 
