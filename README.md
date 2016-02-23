@@ -113,13 +113,13 @@ In the configuration file (``/path/to/FLASH/benchmarks/sklearn/config.cfg``), yo
 
 The configuration items in the ``HPOLIB`` section are effective for all the optimization methods above:
 
-* Set ``use_caching`` as ``1`` to enable pipeline caching and ``0`` to disable caching.
+* Set ``use_caching`` as ``1`` to enable pipeline caching, ``0`` to disable caching.
 * ``cv_folds`` specifies the number of cross validation folds during the optimization.
 * For other items such as ``number_of_jobs`` and ``result_on_terminate``, refer to the HPOlib [manual](http://www.automl.org/manual.html).
 
 The configuration items in the ``LR`` section are only effective for FLASH and FLASH<sup>*</sup>:
 
-* Set ``use_optimal_design`` as ``1`` to enable optimal design for initialization and ``0`` to use random initialization.
+* Set ``use_optimal_design`` as ``1`` to enable optimal design for initialization, ``0`` to use random initialization.
 * ``init_budget`` specifies the number of iterations for Phase 1 (initialization).
 * ``ei_budget`` specifies the number of iterations for Phase 2 (pruning).
 * ``bopt_budget`` specifies the number of iterations for Phase 3 (fine-tuning).
