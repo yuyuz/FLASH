@@ -69,5 +69,8 @@ For benchmark datasets, we build a general data anlalytic pipeline based on [sci
 
 To run this pipeline on a specific dataset, first you need to correctly set the configuration file (``/path/to/FLASH/benchmarks/sklearn/config.cfg``):
 
-* In ``HPOLIB`` section, change the ``function`` path to ``ml_framework.py`` and the ``data_path`` according to your local setting.
-* In ``HPOLIB`` section, change the ``dataset`` name to whichever dataset you have deployed as the input of pipeline.
+* In the ``HPOLIB`` section, change the ``function`` path to ``ml_framework.py`` according to your local setting.
+* In the ``HPOLIB`` section, change the ``data_path`` according to your local setting.
+* In the ``HPOLIB`` section, change the ``dataset`` name to whichever dataset you have deployed as the input of pipeline.
+
+Now you can run the pipeline using different Bayesian optimization algorithms.
