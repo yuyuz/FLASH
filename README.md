@@ -89,19 +89,19 @@ python run_flash_star.py
 ```
 
 For other methods ([SMAC](http://www.cs.ubc.ca/labs/beta/Projects/SMAC), [TPE](http://jaberg.github.io/hyperopt), Random Search), we use the implementations in [HPOlib](http://www.automl.org/hpolib.html) and also provide Python scripts.  
-To run **SMAC**:
+To run SMAC:
 ```bash
 cd /path/to/FLASH/benchmarks/sklearn
 python run_smac.py
 ```
 
-To run **TPE**:
+To run TPE:
 ```bash
 cd /path/to/FLASH/benchmarks/sklearn
 python run_tpe.py
 ```
 
-To run **Random Search**:
+To run Random Search:
 ```bash
 cd /path/to/FLASH/benchmarks/sklearn
 python run_random.py
