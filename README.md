@@ -13,7 +13,7 @@ FLASH is licensed under the GPL license, which can be found in the package.
 
 ## Installation
 
-FLASH is developed on top of [HPOlib](http://www.automl.org/hpolib.html), a general platform for hyperparameter optimization. Since HPOlib was developed on Ubuntu and currently only supports Linux distributions, FLASH also only works on Linux (we developed and tested our package on Ubuntu).
+FLASH is developed on top of [HPOlib](http://www.automl.org/hpolib.html), a general platform for hyperparameter optimization. Since HPOlib was developed on Ubuntu and currently only supports Linux distributions, FLASH also only works on Linux (we developed and tested our package on Ubuntu 14.04.4 LTS).
 
 **1. Clone repository**
 ```bash
