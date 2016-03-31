@@ -42,7 +42,7 @@ log_lr = cPickle.load(fh)
 fh.close()
 
 smac_pkl = glob.glob('smac*/smac*.pkl')
-print 'smack_pkl:', smac_pkl
+print 'smac_pkl:', smac_pkl
 assert len(smac_pkl) == 1
 fh = open(smac_pkl[0])
 log_smac = cPickle.load(fh)
